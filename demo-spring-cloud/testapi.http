@@ -1,0 +1,5 @@
+GET http://localhost:8888/main/application-default.yml
+###
+GET http://localhost:8888/main/hello-world-dev.yml
+###
+http://localhost:8888/hello-world/dev
