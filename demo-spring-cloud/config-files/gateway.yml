@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: hello-route
+              predicates:
+                - Path=/api/hello/**
+              uri: lb://HELLO-WORLD
+              filters:
+                - RewritePath=/api/shop(?<segment>.*),$\{segment}
+                - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, localhost:8080/api/shop
