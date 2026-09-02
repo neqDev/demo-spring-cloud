@@ -8,5 +8,5 @@ spring:
       server:
         git:
           uri: https://github.com/neqDev/demo-spring-cloud
-          search-paths: config-files
+          search-paths: demo-spring-cloud/config-files
 
