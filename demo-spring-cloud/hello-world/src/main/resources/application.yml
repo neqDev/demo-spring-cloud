@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hello-world
+  config:
+    import:
+      - configserver:http://localhost:8888
+  cloud:
+    config:
+      label: main
+      fail-fast: true
