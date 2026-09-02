@@ -4,7 +4,6 @@ spring:
   config:
     import:
       - configserver:http://localhost:8888
-      - configserver:http://localhost:8889
   cloud:
     config:
       label: main
