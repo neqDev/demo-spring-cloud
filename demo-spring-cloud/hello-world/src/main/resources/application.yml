@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: hello-world
@@ -8,3 +9,8 @@ spring:
     config:
       label: main
       fail-fast: true
+server:
+  port: 9998
+eureka:
+  instance:
+    prefer-ip-address: true
