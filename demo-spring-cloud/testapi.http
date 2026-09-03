@@ -5,7 +5,5 @@ GET http://localhost:8888/main/hello-world-dev.yml
 GET http://localhost:8888/hello-world/dev
 ###
 GET http://localhost:9998/hello
-###
+### Request do gateway
 GET http://localhost:1000/api/hello/hello
-Accept: application/json
-Content-Type: application/json
